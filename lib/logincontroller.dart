@@ -35,7 +35,7 @@ class Logincontroller extends GetxController {
           snackPosition: SnackPosition.TOP,
         );
         final refreshToken = response.body['refreshToken'] as String;
-        final accessToken = response.body['accessToken'] as String;
+        final accessToken = response.body['accessToken  '] as String;
         final expiryIn = response.body['expiresIn'] as String;
 
         await StorageServices.saveAccessToken(
